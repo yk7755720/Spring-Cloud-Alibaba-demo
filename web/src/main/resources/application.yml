@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: web-service
+  profiles:
+      active: @profileActive@
+  zipkin:
+      base-url: http://localhost:29411
+server:
+  port: 18991
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+pagehelper:
+    helperDialect: mysql
+    reasonable: true
+    supportMethodsArguments: true
+    params: count=countSql
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:18761/eureka/
+
+# 配置swagger
+swagger:
+    enabled: true
+    base-package: com.web
+    title: web-service
+    version: 1.0.0.SNAPSHOT
+    description: 管理后端服务
+    contact:
+        name: web
+
+feign:
+  hystrix:
+    enabled: true      #启动断路器先关了要用自己开
+
