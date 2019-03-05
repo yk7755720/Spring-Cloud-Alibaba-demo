@@ -3,6 +3,6 @@ spring:
   profiles: test
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.96.45.172:3306/test?useSSL=false&zeroDateTimeBehavior=convertToNull
-    username: dpm
-    password: FUMEIYU!_dpm!_2017!
+    url: jdbc:mysql://47.104.220.11:3306/kevintest?useSSL=false&zeroDateTimeBehavior=convertToNull
+        username: root
+        password: mysql
