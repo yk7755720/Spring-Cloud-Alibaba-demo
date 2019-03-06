@@ -2,7 +2,7 @@
 spring:
   profiles: dev
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.104.220.11:3306/kevintest?useSSL=false&zeroDateTimeBehavior=convertToNull
-    username: root
-    password: mysql
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://47.104.220.11:3306/kevintest
+      username: root
+      password: root

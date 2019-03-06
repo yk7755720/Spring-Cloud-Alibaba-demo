@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com</groupId>
-    <artifactId>web</artifactId>
-    <name>web</name>
-    <description>web服务</description>
+    <artifactId>web-two</artifactId>
+    <name>web-two</name>
+    <description>web-two服务</description>
     <packaging>jar</packaging>
     <parent>
         <groupId>com</groupId>
@@ -93,7 +93,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zipkin</artifactId>
         </dependency>
-
         <!-- 开启feign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -102,14 +101,14 @@
     </dependencies>
 
     <build>
-        <finalName>web</finalName>
+        <finalName>web-two</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>com.web.WebApplication</mainClass>
+                    <mainClass>com.web.WebTwoApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>

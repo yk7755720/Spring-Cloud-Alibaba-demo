@@ -10,14 +10,20 @@ spring:
           lowerCaseServiceId: true
           enabled: true
       routes:
-        - id: web-service                #网关路由到网易官网
+        - id: web-service
           uri: lb://web-service
           predicates:
           - Path=/web-service/**
-          filters:
-          #- SwaggerHeaderFilter
-          - StripPrefix=1
 
+        - id: web-two
+          uri: lb://web-two
+          predicates:
+          - Path=/web-two/**
+
+
+logging:
+  level:
+    com.web-service: DEBUG
 
 eureka:
   instance:

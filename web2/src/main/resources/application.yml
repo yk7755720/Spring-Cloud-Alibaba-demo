@@ -1,6 +1,6 @@
 spring:
   application:
-    name: web-service
+    name: web-two
   profiles:
       active: @profileActive@
   #============================== ZIPKIN 调用链，开发时可注掉 ==================================
@@ -15,11 +15,9 @@ spring:
       probability: 1.0  #zipkin采集率  0.1表示 10%采集率
 
 server:
-  port: 18991
+  port: 18992
 
-logging:
-  level:
-    com.web-service: DEBUG
+
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
@@ -38,11 +36,11 @@ eureka:
 swagger:
     enabled: true
     base-package: com.web
-    title: web-service
+    title: web-two
     version: 1.0.0.SNAPSHOT
     description: 管理后端服务
     contact:
-        name: web
+        name: web-two
 
 feign:
   hystrix:
