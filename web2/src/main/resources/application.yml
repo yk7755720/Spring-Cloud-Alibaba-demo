@@ -27,10 +27,7 @@ pagehelper:
     supportMethodsArguments: true
     params: count=countSql
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:18761/eureka/
+
 
 # 配置swagger
 swagger:

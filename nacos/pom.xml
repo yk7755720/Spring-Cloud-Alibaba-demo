@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com</groupId>
-    <artifactId>eureka</artifactId>
+    <artifactId>nacos</artifactId>
 
-    <name>eureka</name>
-    <description>eureka注册中心</description>
+    <name>nacos</name>
+    <description>nacos注册中心</description>
 
     <parent>
         <groupId>com</groupId>
@@ -17,20 +17,20 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
 
     <build>
-        <finalName>eureka</finalName>
+        <finalName>nacos</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>com.eureka.EurekaApplication</mainClass>
+                    <mainClass>com.nacos.NacosApplication</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>

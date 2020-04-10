@@ -1,8 +1,8 @@
 #测试环境
 spring:
-  profiles: test
+  profiles: dev
   datasource:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://47.104.220.11:3306/kevintest
-      username: root
-      password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.179:3306/actTest
+    username: root
+    password: fumeiyu@08

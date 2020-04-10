@@ -19,18 +19,15 @@ spring:
           uri: lb://web-two
           predicates:
           - Path=/web-two/**
-
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
 
 logging:
   level:
     com.web-service: DEBUG
 
-eureka:
-  instance:
-    prefer-ip-address: true
-  client:
-    service-url:
-      defaultZone: http://localhost:18761/eureka/
+
 
 
 
