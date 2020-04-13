@@ -26,9 +26,9 @@ public class TestController {
         return testService.getTestStr(str);
     }
 
-    @GetMapping("/getpz")
-    public String getpz(String name) {
-        return configtService.getCeshi(name);
+    @GetMapping("/getValue")
+    public String getValue(String name) {
+        return configtService.getValue(name);
     }
 
 }

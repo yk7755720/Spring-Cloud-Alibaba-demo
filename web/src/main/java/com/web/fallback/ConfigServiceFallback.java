@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 public class ConfigServiceFallback implements ConfigtService {
 
     @Override
-    public String getCeshi(String name) {
+    public String getValue(String name) {
         return "获取测试失败";
     }
 }

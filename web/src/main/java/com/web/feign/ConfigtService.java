@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Service
 public interface ConfigtService {
 
-    @RequestMapping(value="/config/getCeshi",method = RequestMethod.GET)
-    String getCeshi(@RequestParam(value = "name") String name);
+    @RequestMapping(value="/config/getValue",method = RequestMethod.GET)
+    String getValue(@RequestParam(value = "name") String name);
 }
