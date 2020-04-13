@@ -1,0 +1,25 @@
+server:
+  port: 16666
+spring:
+  application:
+      name: service-gateway
+  cloud:        # spring cloud gateway 路由配置方式
+    gateway:
+      discovery:
+        locator:
+          lowerCaseServiceId: true #设置为小写
+          enabled: true #开启注册和发现功能
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+
+
+
+
+
+
+
+
+
+
