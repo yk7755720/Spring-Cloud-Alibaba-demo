@@ -17,8 +17,8 @@ public class ConfigController {
     @Autowired
     private ConfigurableApplicationContext applicationContext;
 
-    @GetMapping("/getCeshi")
-    public String getCeshi(String name){
+    @GetMapping("/getValue")
+    public String getValue(String name){
         return applicationContext.getEnvironment().getProperty(name);
     }
 }
