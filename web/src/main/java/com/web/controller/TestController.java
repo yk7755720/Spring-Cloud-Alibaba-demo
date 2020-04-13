@@ -27,8 +27,8 @@ public class TestController {
     }
 
     @GetMapping("/getpz")
-    public String getpz() {
-        return configtService.getCeshi();
+    public String getpz(String name) {
+        return configtService.getCeshi(name);
     }
 
 }
